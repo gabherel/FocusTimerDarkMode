@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-default: 'Roboto';
+
+  --base-color: 194;
+  --fc-timer: #323238;
+  --bc-sounds: ;
+}
+
+body {
+  font-family: var(--ff-default);
+  font-weight: 500;
+  color: var(--fc-timer);
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  gap: 19.2rem;
+}
+
+span {
+  font-size: 12.61rem;
+  line-height: 14.8rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+button {
+  border-style: none;
+  background: none;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  margin-bottom: 4.8rem;
+}
+
+.buttonSounds {
+  display: grid;
+  grid-template-areas:
+    'buttonForest buttonRain '
+    'buttonCoffee buttonFire';
+
+  grid-gap: 3.2rem;
+
+  pointer-events: fill('#02799D');
+}
+
+button {
+  cursor: pointer;
+  position: relative;
+}
+
+input {
+  appearance: none;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.volumeSlider {
+  width: 9.2rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 0.3rem;
+}
+
+.volumes input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.volumes {
+  position: absolute;
+  top: 11.5rem;
+  right: 11rem;
+  left: 2rem;
+}
+
+.volumes svg {
+  position: absolute;
+}
+
+
+
+.darkMode,
+.lightMode
+{
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+.hide {
+  display: none;
+}
